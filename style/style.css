@@ -74,7 +74,7 @@ h6 {
   --fw-bold: 700;
 
   --cc-white: white;
-  --cc-tile: #2a9d8f;
+  --cc-tile: #0fa3b1;
   --cc-orange: #f4a261;
   --cc-lightred: #e76f51;
   --cc-darktile: #264653;
@@ -94,7 +94,7 @@ body {
 .image-slider__img {
   border-radius: 20px;
 }
-.topon-image {
+.controller {
   background-color: var(--cc-tile);
   border-radius: 50%;
   position: absolute;
