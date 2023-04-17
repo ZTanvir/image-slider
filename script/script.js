@@ -42,13 +42,21 @@ allDotsEl.forEach((dot) => {
         let dotName = e.target.classList[0];
 
         if (dotName.includes("one")) {
+            imageIndex = 0;
             sliderImgEl.src = AllImgSrc[0];
+            addActiveClass(allDotsEl, imageIndex);
         } else if (dotName.includes("two")) {
+            imageIndex = 1;
             sliderImgEl.src = AllImgSrc[1];
+            addActiveClass(allDotsEl, imageIndex);
         } else if (dotName.includes("three")) {
+            imageIndex = 2;
             sliderImgEl.src = AllImgSrc[2];
+            addActiveClass(allDotsEl, imageIndex);
         } else if (dotName.includes("four")) {
+            imageIndex = 3;
             sliderImgEl.src = AllImgSrc[3];
+            addActiveClass(allDotsEl, imageIndex);
         }
     });
 });
