@@ -1,3 +1,5 @@
+import { addActiveClass } from "./function.js";
+
 const sliderImgEl = document.querySelector(".image-slider__img");
 const leftSliderEl = document.querySelector(".image-slider__controller-left");
 const rightSliderEl = document.querySelector(".image-slider__controller-right");
@@ -20,6 +22,7 @@ leftSliderEl.addEventListener("click", (e) => {
         imageIndex--;
         sliderImgEl.src = AllImgSrc[imageIndex];
     }
+    addActiveClass(allDotsEl, imageIndex);
 });
 
 rightSliderEl.addEventListener("click", (e) => {
@@ -30,6 +33,7 @@ rightSliderEl.addEventListener("click", (e) => {
         imageIndex++;
         sliderImgEl.src = AllImgSrc[imageIndex];
     }
+    addActiveClass(allDotsEl, imageIndex);
 });
 
 // Change images based dots
