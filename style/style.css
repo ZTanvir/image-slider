@@ -131,3 +131,6 @@ body {
 .image-slider__dot-four {
     background-color: var(--cc-darkorange);
 }
+.active {
+    border-radius: 50%;
+}
