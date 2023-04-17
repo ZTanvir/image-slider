@@ -60,3 +60,12 @@ allDotsEl.forEach((dot) => {
         }
     });
 });
+// auto change slide every 5s
+setInterval(() => {
+    if (imageIndex > 3) {
+        imageIndex = 0;
+    }
+    sliderImgEl.src = AllImgSrc[imageIndex];
+    addActiveClass(allDotsEl, imageIndex);
+    imageIndex++;
+}, 5000);
